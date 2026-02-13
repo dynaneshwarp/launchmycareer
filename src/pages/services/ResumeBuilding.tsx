@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import resumeHero from "@/assets/resume-hero.jpg";
-import resumeAts from "@/assets/resume-ats.jpg";
+import resumeAts from "@/assets/resume-ats.png";
 
 const ResumeBuilding = () => {
   const processSteps = [

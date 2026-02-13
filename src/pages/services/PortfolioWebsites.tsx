@@ -368,7 +368,7 @@ const PortfolioWebsites = () => {
                 </p>
 
                 <a 
-                  href="https://vinodbavageportfolio.lovable.app/" 
+                  href="https://vinod-portfolio.pages.dev/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
@@ -506,7 +506,7 @@ const PortfolioWebsites = () => {
                 </Button>
               </Link>
               <a 
-                href="https://vinodbavageportfolio.lovable.app/" 
+                href="https://vinod-portfolio.pages.dev/" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
