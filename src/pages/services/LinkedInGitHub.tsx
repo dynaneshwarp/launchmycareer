@@ -133,14 +133,25 @@ const LinkedInGitHub = () => {
               recruiters validate your resume.
             </p>
 
-            <div className="p-6 rounded-2xl bg-card border border-border/50 inline-block">
+            <div className="p-6 rounded-2xl bg-card border border-border/50 inline-block mb-8">
               <p className="text-foreground font-medium">
                 We help you show recruiters <span className="text-primary">what you did</span>, how you did it, and <span className="text-primary">why it matters</span>.
               </p>
             </div>
-          </motion.div>
-        </div>
-      </section>
+
+            <a 
+              href="https://github.com/vinodbavage31" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" variant="outline" className="gap-2">
+                <Github className="w-4 h-4" />
+                View Sample GitHub
+              </Button>
+            </a>
+           </motion.div>
+         </div>
+       </section>
 
       {/* The Problem */}
       <section className="py-20 bg-card border-y border-border">
