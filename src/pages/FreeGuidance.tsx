@@ -191,26 +191,26 @@ const FreeGuidance = () => {
         </section>
 
         {/* Form Section */}
-        <section className="py-12">
+        <section className="py-16">
           <div className="container mx-auto px-4">
-            <div className="max-w-5xl mx-auto grid lg:grid-cols-5 gap-12">
+            <div className="max-w-5xl mx-auto grid lg:grid-cols-5 gap-10">
               {/* Left Column - Info */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="lg:col-span-2 space-y-8"
+                className="lg:col-span-2 space-y-6"
               >
-                <div className="bg-card rounded-3xl p-8 shadow-card border border-border/50">
-                  <h3 className="text-xl font-bold mb-4">Why Reach Out?</h3>
+                <div className="bg-card rounded-2xl p-6 shadow-card border border-border/50">
+                  <h3 className="text-lg font-bold mb-4">Why Reach Out?</h3>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
                       <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
                         <Heart className="w-4 h-4 text-primary" />
                       </div>
                       <div>
-                        <span className="font-medium">No Pressure</span>
-                        <p className="text-sm text-muted-foreground">This isn't a sales call. We genuinely want to help.</p>
+                        <span className="font-medium text-sm">No Pressure</span>
+                        <p className="text-xs text-muted-foreground mt-0.5">This isn't a sales call. We genuinely want to help.</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
@@ -218,8 +218,8 @@ const FreeGuidance = () => {
                         <Lightbulb className="w-4 h-4 text-primary" />
                       </div>
                       <div>
-                        <span className="font-medium">Real Advice</span>
-                        <p className="text-sm text-muted-foreground">Get practical, honest guidance based on real industry experience.</p>
+                        <span className="font-medium text-sm">Real Advice</span>
+                        <p className="text-xs text-muted-foreground mt-0.5">Practical, honest guidance based on real industry experience.</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
@@ -227,18 +227,18 @@ const FreeGuidance = () => {
                         <HelpCircle className="w-4 h-4 text-primary" />
                       </div>
                       <div>
-                        <span className="font-medium">Any Question Welcome</span>
-                        <p className="text-sm text-muted-foreground">Career clarity, resume tips, skill priorities — ask anything.</p>
+                        <span className="font-medium text-sm">Any Question Welcome</span>
+                        <p className="text-xs text-muted-foreground mt-0.5">Career clarity, resume tips, skill priorities — ask anything.</p>
                       </div>
                     </li>
                   </ul>
                 </div>
 
-                <div className="bg-muted/30 rounded-2xl p-6 border border-border/50">
+                <div className="bg-muted/30 rounded-xl p-5 border border-border/50">
                   <p className="text-sm text-muted-foreground italic">
-                    "We started this because we wish someone had given us honest career guidance when we were starting out. Now we're here to be that for you."
+                    "We started this because we wish someone had given us honest career guidance when we were starting out."
                   </p>
-                  <p className="text-sm font-medium mt-3">— The Launch My Career Team</p>
+                  <p className="text-sm font-medium mt-2">— The Launch My Career Team</p>
                 </div>
               </motion.div>
 
@@ -249,51 +249,52 @@ const FreeGuidance = () => {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="lg:col-span-3"
               >
-                <form onSubmit={handleSubmit} className="space-y-8">
-                  <div className="bg-card rounded-3xl p-8 md:p-10 shadow-card border border-border/50">
-                    <div className="flex items-center gap-3 mb-8">
-                      <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center">
-                        <User className="w-5 h-5 text-primary-foreground" />
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  {/* Personal Details */}
+                  <div className="bg-card rounded-2xl p-6 md:p-8 shadow-card border border-border/50">
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="w-9 h-9 rounded-lg bg-gradient-primary flex items-center justify-center">
+                        <User className="w-4.5 h-4.5 text-primary-foreground" />
                       </div>
                       <div>
-                        <h2 className="text-xl font-bold">Your Details</h2>
-                        <p className="text-sm text-muted-foreground">So we can get back to you</p>
+                        <h2 className="text-lg font-bold">Your Details</h2>
+                        <p className="text-xs text-muted-foreground">So we can get back to you</p>
                       </div>
                     </div>
 
-                    <div className="space-y-6">
-                      <div className="space-y-2">
+                    <div className="space-y-5">
+                      <div className="space-y-1.5">
                         <Label htmlFor="name" className="text-sm font-medium">
-                          Name <span className="text-destructive">*</span>
+                          Full Name <span className="text-destructive">*</span>
                         </Label>
                         <Input
                           id="name"
                           name="name"
-                          placeholder="What should we call you?"
+                          placeholder="Enter your full name"
                           required
-                          className="h-12 rounded-xl bg-background/50 border-border/50 focus:border-primary transition-colors"
+                          className="h-11 rounded-lg bg-background/50 border-border/50 focus:border-primary transition-colors"
                         />
                       </div>
 
-                      <div className="grid sm:grid-cols-2 gap-6">
-                        <div className="space-y-2">
-                          <Label htmlFor="email" className="text-sm font-medium flex items-center gap-2">
-                            <Mail className="w-4 h-4" />
+                      <div className="grid sm:grid-cols-2 gap-5">
+                        <div className="space-y-1.5">
+                          <Label htmlFor="email" className="text-sm font-medium flex items-center gap-1.5">
+                            <Mail className="w-3.5 h-3.5" />
                             Email <span className="text-destructive">*</span>
                           </Label>
                           <Input
                             id="email"
                             name="email"
                             type="email"
-                            placeholder="your.email@example.com"
+                            placeholder="you@example.com"
                             required
-                            className="h-12 rounded-xl bg-background/50 border-border/50 focus:border-primary transition-colors"
+                            className="h-11 rounded-lg bg-background/50 border-border/50 focus:border-primary transition-colors"
                           />
                         </div>
 
-                        <div className="space-y-2">
-                          <Label htmlFor="phone" className="text-sm font-medium flex items-center gap-2">
-                            <Phone className="w-4 h-4" />
+                        <div className="space-y-1.5">
+                          <Label htmlFor="phone" className="text-sm font-medium flex items-center gap-1.5">
+                            <Phone className="w-3.5 h-3.5" />
                             Phone <span className="text-muted-foreground text-xs">(optional)</span>
                           </Label>
                           <Input
@@ -301,7 +302,7 @@ const FreeGuidance = () => {
                             name="phone"
                             type="tel"
                             placeholder="+91 98765 43210"
-                            className="h-12 rounded-xl bg-background/50 border-border/50 focus:border-primary transition-colors"
+                            className="h-11 rounded-lg bg-background/50 border-border/50 focus:border-primary transition-colors"
                           />
                         </div>
                       </div>
@@ -309,36 +310,36 @@ const FreeGuidance = () => {
                   </div>
 
                   {/* Career Stage */}
-                  <div className="bg-card rounded-3xl p-8 md:p-10 shadow-card border border-border/50">
-                    <div className="flex items-center gap-3 mb-8">
-                      <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center">
-                        <GraduationCap className="w-5 h-5 text-primary-foreground" />
+                  <div className="bg-card rounded-2xl p-6 md:p-8 shadow-card border border-border/50">
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="w-9 h-9 rounded-lg bg-gradient-primary flex items-center justify-center">
+                        <GraduationCap className="w-4.5 h-4.5 text-primary-foreground" />
                       </div>
                       <div>
-                        <h2 className="text-xl font-bold">Where Are You Now?</h2>
-                        <p className="text-sm text-muted-foreground">This helps us give better advice</p>
+                        <h2 className="text-lg font-bold">Where Are You Now?</h2>
+                        <p className="text-xs text-muted-foreground">This helps us give better advice</p>
                       </div>
                     </div>
 
                     <RadioGroup 
                       value={careerStage} 
                       onValueChange={setCareerStage}
-                      className="grid sm:grid-cols-2 gap-4"
+                      className="grid sm:grid-cols-2 gap-3"
                     >
                       {careerStages.map((stage) => (
                         <label
                           key={stage.id}
                           htmlFor={stage.id}
-                          className={`relative flex items-start gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all duration-300 ${
+                          className={`relative flex items-start gap-3 p-3.5 rounded-lg border-2 cursor-pointer transition-all duration-300 ${
                             careerStage === stage.id
                               ? "border-primary bg-primary/5 shadow-soft"
                               : "border-border/50 hover:border-primary/30 hover:bg-muted/30"
                           }`}
                         >
-                          <RadioGroupItem value={stage.id} id={stage.id} className="mt-1" />
+                          <RadioGroupItem value={stage.id} id={stage.id} className="mt-0.5" />
                           <div className="flex-1">
-                            <div className="flex items-center gap-2 mb-0.5">
-                              <stage.icon className={`w-4 h-4 ${careerStage === stage.id ? "text-primary" : "text-muted-foreground"}`} />
+                            <div className="flex items-center gap-1.5 mb-0.5">
+                              <stage.icon className={`w-3.5 h-3.5 ${careerStage === stage.id ? "text-primary" : "text-muted-foreground"}`} />
                               <span className="font-semibold text-sm">{stage.label}</span>
                             </div>
                             <p className="text-xs text-muted-foreground">{stage.description}</p>
@@ -349,37 +350,37 @@ const FreeGuidance = () => {
                   </div>
 
                   {/* Message */}
-                  <div className="bg-card rounded-3xl p-8 md:p-10 shadow-card border border-border/50">
-                    <div className="flex items-center gap-3 mb-8">
-                      <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center">
-                        <MessageSquare className="w-5 h-5 text-primary-foreground" />
+                  <div className="bg-card rounded-2xl p-6 md:p-8 shadow-card border border-border/50">
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="w-9 h-9 rounded-lg bg-gradient-primary flex items-center justify-center">
+                        <MessageSquare className="w-4.5 h-4.5 text-primary-foreground" />
                       </div>
                       <div>
-                        <h2 className="text-xl font-bold">Your Question or Message</h2>
-                        <p className="text-sm text-muted-foreground">What's on your mind?</p>
+                        <h2 className="text-lg font-bold">Your Question</h2>
+                        <p className="text-xs text-muted-foreground">What's on your mind?</p>
                       </div>
                     </div>
 
                     <Textarea
                       id="message"
                       name="message"
-                      placeholder="Feel free to ask anything — about your career path, skill priorities, resume concerns, job search struggles, or anything else you're curious about..."
+                      placeholder="Ask about your career path, skill priorities, resume concerns, job search struggles, or anything else..."
                       required
-                      rows={6}
-                      className="rounded-xl bg-background/50 border-border/50 focus:border-primary transition-colors resize-none"
+                      rows={5}
+                      className="rounded-lg bg-background/50 border-border/50 focus:border-primary transition-colors resize-none text-sm"
                     />
                   </div>
 
                   {/* Submit */}
-                  <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-                    <p className="text-sm text-muted-foreground max-w-md">
-                      We respect your privacy. Your information is only used to respond to your inquiry.
+                  <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
+                    <p className="text-xs text-muted-foreground max-w-sm">
+                      Your privacy matters. Information is only used to respond to your inquiry.
                     </p>
                     <Button
                       type="submit"
                       variant="hero"
-                      size="xl"
-                      className="w-full sm:w-auto min-w-[180px]"
+                      size="lg"
+                      className="w-full sm:w-auto min-w-[160px]"
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? (
@@ -387,7 +388,7 @@ const FreeGuidance = () => {
                       ) : (
                         <>
                           Send Message
-                          <Send className="w-5 h-5" />
+                          <Send className="w-4 h-4" />
                         </>
                       )}
                     </Button>
