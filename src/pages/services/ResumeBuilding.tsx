@@ -139,14 +139,25 @@ const ResumeBuilding = () => {
               <strong className="text-foreground"> recruiters and ATS systems understand</strong>.
             </p>
 
-            <div className="p-6 rounded-2xl bg-card border border-border/50 inline-block">
+            <div className="p-6 rounded-2xl bg-card border border-border/50 inline-block mb-8">
               <p className="text-foreground font-medium">
                 We craft resumes that are <span className="text-primary">handcrafted</span>, <span className="text-primary">project-driven</span>, <span className="text-primary">proof-based</span>, and <span className="text-primary">recruiter-validated</span>.
               </p>
             </div>
-          </motion.div>
-        </div>
-      </section>
+
+            <a 
+              href="https://drive.google.com/file/d/1IQWryKG9JhMMZbhqED2H2zcxKEuKummQ/view" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" variant="outline" className="gap-2">
+                <FileText className="w-4 h-4" />
+                View Resume Example
+              </Button>
+            </a>
+           </motion.div>
+         </div>
+       </section>
 
       {/* The Problem We Solve */}
       <section className="py-20 bg-card border-y border-border">
